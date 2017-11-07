@@ -55,6 +55,7 @@ public class TDreamInProjectServiceImpl {
     @Value("${statistics.url}")
     private String statisticsUrl;
 
+    private final static String indiegogourl = "https://www.indiegogo.com";
     /**
      * 初始化抓取任务
      *      目前暂时无法获取到只有单个项目的请求地址
@@ -132,7 +133,7 @@ public class TDreamInProjectServiceImpl {
                     inProject.setCurrMoney(currMoney);
                     inProject.setMoneyCurrency(moneyCurrency);
                     inProject.setRemainDay(remainDay);
-                    inProject.setProjectUrl(projectUrl);
+                    inProject.setProjectUrl(indiegogourl+projectUrl);
                     inProject.setFinishPer(finishPer);
                     if (foreverStatus){
                         inProject.setForeverStatus(1);//1表示永久众筹

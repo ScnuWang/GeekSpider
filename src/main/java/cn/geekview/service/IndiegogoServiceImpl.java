@@ -1,8 +1,0 @@
-package cn.geekview.service;
-
-import org.springframework.stereotype.Service;
-
-@Service
-public class IndiegogoServiceImpl {
-
-}

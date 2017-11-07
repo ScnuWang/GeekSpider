@@ -35,9 +35,9 @@ public class ServiceTest {
         DateTime now = DateTime.now();
         Date dateTime = new DateTime(now.getYear(),now.getMonthOfYear(),now.getDayOfMonth(),12,0,0).toDate();
 
-//        inProjectService.grap(dateTime);
-//        inProjectService.analysis(dateTime);
-//        inProjectService.statistic(dateFormat.format(dateTime));
+//       inProjectService.grap(dateTime);
+//       inProjectService.analysis(dateTime);
+//       inProjectService.statistic(dateFormat.format(dateTime));
     }
 
     @Test
