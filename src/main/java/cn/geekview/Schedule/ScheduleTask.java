@@ -44,4 +44,10 @@ public class ScheduleTask {
 
     }
 
+//    @Scheduled(cron = "*/1 * * * * ?")
+    public void task1(){
+        System.out.println("每过5分钟执行一次");
+    }
+
+
 }

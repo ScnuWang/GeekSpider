@@ -5,20 +5,20 @@ import org.joda.time.DateTime;
 import org.junit.Test;
 
 import java.math.BigDecimal;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class BasicTest {
         @Test
         public void test(){
-            System.out.println(new BigDecimal(CommonUtil.getNumber("")));
-            int pa_num = 1;
-            String url = "https://www.baidu.com";
-            while (true){
-                String requrl = url + pa_num;
-                System.out.println(requrl);
-                if(pa_num>5) break;
-                pa_num ++;
+            String date = "2017-12-29T23:59:59-08:00".split("T")[0];
+            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            try {
+                Date d = dateFormat.parse(date);
+                System.out.println(d);
+            } catch (ParseException e) {
+                e.printStackTrace();
             }
         }
 
