@@ -108,7 +108,7 @@ public class TDreamInProjectServiceImpl {
                     int t = time.intValue()/(24*60*1000);
                     Integer remainDay = 0;
                     if (t>1){
-                        remainDay = time.intValue();
+                        remainDay = t;
                     }
                     String projectUrl = json.getString("clickthrough_url");                                   //项目地址
                     String collected_percentage = String.valueOf(json.getBigDecimal("funds_raised_percent").multiply(new BigDecimal(100)).intValue());      //完成百分比
